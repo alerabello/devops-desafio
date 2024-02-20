@@ -14,8 +14,8 @@ jobs:
     env:
       AWS_DEFAULT_REGION: us-east-1
       AWS_ECR_REPOSITORY_NAME: devops-docker
-      AWS_ECS_SERVICE_NAME: aws-ecs-demo-service
-      AWS_ECS_CLUSTER_NAME: aws-ecs-demo-cluster
+      AWS_ECS_SERVICE_NAME: aws-ecs-devops-service
+      AWS_ECS_CLUSTER_NAME: aws-ecs-devops-cluster
 
     steps:
     - name: Checkout
