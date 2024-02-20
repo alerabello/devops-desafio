@@ -2,7 +2,7 @@ name: Deploy to ECR
 
 on:
   push:
-    branches: [ main ]
+    branches: main
 
 jobs:
   deploy:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
-      contents: write
+      contents: read
     env:
       AWS_DEFAULT_REGION: us-east-1
       AWS_ECR_REPOSITORY_NAME: devops-docker
@@ -27,6 +27,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_DEFAULT_REGION }}
+        role-to-assume: arn:aws:iam::760432959396:role/AMZ-Github-Actions
 
     - name: Login to Amazon ECR
       id: login-ecr
