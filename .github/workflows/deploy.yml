@@ -8,6 +8,9 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     env:
       AWS_DEFAULT_REGION: us-east-1
       AWS_ECR_REPOSITORY_NAME: devops-docker
