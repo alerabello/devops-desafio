@@ -1,6 +1,6 @@
 {
     "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::760432959396:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::590183887783:role/AMZ-ecs-devops-cluster",
     "containerDefinitions": [
       {
         "dnsSearchDomains": null,
@@ -29,7 +29,7 @@
         "memoryReservation": 128,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "760432959396.dkr.ecr.us-east-1.amazonaws.com/devops-docker",
+        "image": "590183887783.dkr.ecr.us-east-1.amazonaws.com/devops-docker",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -46,16 +46,16 @@
         "dockerLabels": null,
         "systemControls": null,
         "privileged": null,
-        "name": "devops-docker"
+        "name": "app-devops"
       }
     ],
     "placementConstraints": [],
     "memory": null,
-    "taskRoleArn": "arn:aws:iam::760432959396:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::590183887783:role/AMZ-ecs-devops-cluster",
     "compatibilities": [
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:760432959396:task-definition/aws-ecs-demo-task-definition:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/aws-ecs-demo-task-definition:1",
     "family": "aws-ecs-demo-task-definition",
     "requiresAttributes": [
       {
