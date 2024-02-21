@@ -55,7 +55,7 @@
     "compatibilities": [
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/aws-ecs-demo-task-definition:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/aws-ecs-demo-task-definition:latest",
     "family": "aws-ecs-demo-task-definition",
     "requiresAttributes": [
       {
