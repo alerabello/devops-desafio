@@ -55,7 +55,7 @@
     "compatibilities": [
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/sv-devops-app-Developer:latest",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/sv-devops-app-Developer",
     "family": "sv-devops-app-Developer",
     "requiresAttributes": [
       {
