@@ -32,4 +32,4 @@
 
 Este arquivo COMMENTS.md registra todas as atividades, testes, decisões e ideias relacionadas ao desenvolvimento e operação da aplicação. Ele serve como uma documentação valiosa para a equipe, facilitando a compreensão do histórico e aprimoramento contínuo do sistema.
 
-![Desafiodevops](imagens/Devops_Desafio.jpeg)
+![Desafiodevops](Devops_Desafio.jpeg)
