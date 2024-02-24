@@ -1,6 +1,6 @@
 {
     "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::590183887783:role/AMZ-ecs-devops-cluster",
+    "executionRoleArn": "arn:aws:iam::XXXXXXXXXXXXX:role/XXXXXXXXXXXXXXXXXXXXXXXXX",
     "containerDefinitions": [
       {
         "dnsSearchDomains": null,
@@ -36,7 +36,7 @@
         "memoryReservation": 1024,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "590183887783.dkr.ecr.us-east-1.amazonaws.com/devops-docker:latest",
+        "image": "XXXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/XXXXXXXXXXXXXX:latest",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -58,11 +58,11 @@
     ],
     "placementConstraints": [],
     "memory": null,
-    "taskRoleArn": "arn:aws:iam::590183887783:role/AMZ-ecs-devops-cluster",
+    "taskRoleArn": "arn:aws:iam::XXXXXXXXXXXXX:role/XXXXXXXXXXXXXXXXXXXXXXXXX",
     "compatibilities": [
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590183887783:task-definition/sv-devops-app-Developer",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXXXX:task-definition/sv-devops-app-Developer",
     "family": "sv-devops-app-Developer",
     "requiresAttributes": [
       {
