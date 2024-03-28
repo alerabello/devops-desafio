@@ -3,7 +3,6 @@
   "executionRoleArn": "arn:aws:iam::XXXXXXXXXXXXX:role/XXXXXXXXXXXXXXXXXXXXXXXXX",
   "containerDefinitions": [
     {
-      "dnsSearchDomains": null,
       "environmentFiles": null,
       "logConfiguration": {
         "logDriver": "awslogs",
@@ -13,17 +12,15 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 80,
+          "hostPort": null,
           "protocol": "tcp",
           "containerPort": 5000
         }
       ],
-      "command": null,
       "linuxParameters": null,
-      "cpu": 1,
+      "cpu": 256,
       "environment": [
         {
           "name": "AWS_REGION",
@@ -50,23 +47,9 @@
           "value": "devops-app"
         }
       ],
-      "resourceRequirements": null,
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "secrets": null,
-      "dockerSecurityOptions": null,
-      "memory": 512,
-      "memoryReservation": 1024,
-      "volumesFrom": [],
-      "stopTimeout": null,
+      "memory": 1024,
+      "memoryReservation": 512,
       "image": "XXXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/XXXXXXXXXXXXXX:latest",
-      "startTimeout": null,
-      "firelensConfiguration": null,
-      "dependsOn": null,
-      "disableNetworking": null,
-      "interactive": null,
       "healthCheck": {
         "command": [
           "CMD-SHELL",
@@ -78,63 +61,21 @@
         "startPeriod": 60
       },
       "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "pseudoTerminal": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "systemControls": null,
-      "privileged": null,
       "name": "sv-devops-app"
     }
   ],
-  "placementConstraints": [
-    {
-      "type": "memberOf",
-      "expression": "attribute:ecs.instance-type =~ t3.medium"
-    }
-  ],
-  "memory": null,
+  "memory": "2048",
   "taskRoleArn": "arn:aws:iam::XXXXXXXXXXXXX:role/XXXXXXXXXXXXXXXXXXXXXXXXX",
   "compatibilities": [
-    "EC2"
+    "FARGATE"
   ],
   "taskDefinitionArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXXXX:task-definition/sv-devops-app-Developer",
   "family": "sv-devops-app-Developer",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
-    }
-  ],
-  "pidMode": null,
+  "requiresAttributes": [],
   "requiresCompatibilities": [
-    "EC2"
+    "FARGATE"
   ],
-  "networkMode": null,
-  "cpu": null,
+  "cpu": "1024",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
